@@ -18,6 +18,10 @@ grails.project.dependency.resolution = {
 
 		mavenLocal()
 		mavenCentral()
+		
+		// Is it possible to do better than this?!
+		// Replace with the maven repository where aqapi.jar is uploaded and uncomment!
+        // mavenRepo "http://artifactory:8081/artifactory/repo"
 	}
 
 	dependencies {
@@ -28,6 +32,7 @@ grails.project.dependency.resolution = {
 		runtime('org.apache.camel:camel-jms:2.9.0') {
 			 excludes 'spring-aop', 'spring-beans', 'spring-core', 'spring-expression', 'spring-asm', 'spring-tx', 'spring-context'
 		}
+        runtime('oracle:aqapi:1.0.0')
 	}
 
 	plugins {
