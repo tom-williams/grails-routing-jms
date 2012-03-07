@@ -1,3 +1,6 @@
+import javax.jms.QueueConnectionFactory
+import oracle.jms.AQjmsFactory
+
 class RoutingJmsGrailsPlugin {
 	def version        = '1.2.1'
 	def grailsVersion  = '2.0.1 > *'
